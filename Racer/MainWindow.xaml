@@ -1,8 +1,8 @@
 ﻿<Window x:Class="Racer.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="720" Width="1280">
+    <Grid Background="CornflowerBlue">
+        <Frame x:Name="NavigationFrame" />
     </Grid>
 </Window>

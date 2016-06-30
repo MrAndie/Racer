@@ -1,5 +1,4 @@
-﻿using Racer.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,16 +16,18 @@ using System.Windows.Shapes;
 namespace Racer
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für OptionPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class OptionPage : Page
     {
-        public MainWindow()
+        public OptionPage()
         {
             InitializeComponent();
-            NavigationFrame.Navigate(new StartPage()); // eigentlich: "Racer.Pages.StartPage" daher "using Racer.Pages" oben hinzugefügt;
+        }
 
-
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }
